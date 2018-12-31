@@ -1,28 +1,43 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { connect } from "react-redux";
+import BaseRouter from "./routes";
+import "antd/dist/antd.css";
+import * as actions from "./store/actions/auth";
+import CustomLayout from "./containers/Layout";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.onTryAutoSignUp();
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Router>
+          <CustomLayout {...this.props}>
+            <BaseRouter />
+          </CustomLayout>
+        </Router>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    isAuthenticated: state.token !== null
+  };
+};
+
+// everytime the app will render this will be fired by componentDidAmount()
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onTryAutoSignUp: () => dispatch(actions.authCheckState())
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

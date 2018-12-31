@@ -1,32 +1,172 @@
-.App {
-  text-align: center;
+.container {
+  line-height: 30px;
+}
+#login_page {
+  margin-bottom: 26%;
+}
+#rewardslevelone {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#rewardshistory {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#rewardshistory:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 80px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue;
+}
+#rewardslevelone:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 120px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue;
+}
+#levelsleft {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#login_title {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#sharerewards {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#sharerewards:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 220px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue;
+}
+#login_daily_check {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#login_daily_check:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 130px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue;
+}
+#login_title:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 130px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue;
+}
+#pointsAnalysis {
+  color: cornflowerblue;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#pointsAnalysis:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 130px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue; /* This creates the border. Replace black with whatever color you want. */
+}
+#levelsleft:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 50%; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue; /* This creates the border. Replace black with whatever color you want. */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#tooltip {
+  margin-top: 20px;
+}
+.login_container {
+  min-height: 100%;
+}
+.control_field_width {
+  max-width: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+#currentpoints {
+  color: cornflowerblue;
+  margin-bottom: 20px;
+}
+#currentpoints:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 90px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue; /* This creates the border. Replace black with whatever color you want. */
+}
+#addgoalstitle {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#addgoalstitle:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 9px;
+  width: 70px; /* Change this to whatever width you want. */
+  border-bottom: 1px solid cornflowerblue; /* This creates the border. Replace black with whatever color you want. */
+}
+#goalshistory {
+  color: cornflowerblue;
+  margin-bottom: 30px;
+}
+#goalshistory:after {
+  content: "";
+  display: block;
+  margin: 9px;
+  width: 70px;
+  border-bottom: 1px solid cornflowerblue;
+}
+#fillasurvey {
+  color: cornflowerblue;
+  margin-bottom: 20px;
+}
+#fillasurvey:after {
+  content: "";
+  display: block;
+  margin: 9px;
+  width: 170px;
+  border-bottom: 1px solid cornflowerblue;
+}
+.icon-wrapper {
+  position: relative;
+  padding: 0px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-wrapper .anticon {
+  position: absolute;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.icon-wrapper .anticon:first-child {
+  left: 0;
+}
+
+.icon-wrapper .anticon:last-child {
+  right: 300px;
+}
+#make_transaction_history {
+  color: cornflowerblue;
+  margin-bottom: 20px;
+}
+#make_transaction_history:after {
+  content: "";
+  display: block;
+  margin: 9px;
+  width: 120px;
+  border-bottom: 1px solid cornflowerblue;
 }
